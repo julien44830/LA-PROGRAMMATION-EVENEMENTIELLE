@@ -4,11 +4,25 @@
 //si choix 2 selectionné alors formulaire 1 vérouillé
 
 //constente de selection
-const user1 = document.getElementById('user1');
+const user1 = document.getElementById('user1').value;
 const user2 = document.getElementById('user2');
-console.log(document.getElementById(userNumber.value));
+
+const user = document.getElementById('userNumber').options.length;
+const userNumber = document.getElementById('userNumber');
+console.log(document.getElementById('userNumber').options[1])
+console.log(userNumber.length);
+console.log(userNumber);
 
 
+
+  /*********************************/
+//function selectUser(){
+//  if('userNumber'.option[0]){
+//    .Style = ...
+//  }else{
+ //   .style2...
+ // }
+//}
 
 function displayPseudo1(){
   const pseudo1 = document.getElementById('pseudo1');
