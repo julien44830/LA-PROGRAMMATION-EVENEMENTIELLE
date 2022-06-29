@@ -6,7 +6,7 @@
 //constente de selection
 const form = document.querySelectorAll('form');
 
-const h1 = document.querySelector('h1')
+const h1 = document.getElementsByName('h1')
 //const  = document.querySelectorAll('')
 
 const user1 = document.getElementById('user1').value;
@@ -70,3 +70,26 @@ soumettre2.addEventListener('click', displayMessage1(),displayMessage2() , displ
 // ajout de la fonction sur le select
 userNumber.addEventListener('select', selectUser());
 console.log('JavaScript bien chargé');
+
+
+/********************************************** */
+{/* <label>Choose an ice cream flavor:
+  <select class="ice-cream" name="ice-cream">
+    <option value="">Select One …</option>
+    <option value="chocolate">Chocolate</option>
+    <option value="sardine">Sardine</option>
+    <option value="vanilla">Vanilla</option>
+  </select>
+</label>
+
+<div class="result"></div>
+
+
+const selectElement = document.querySelector('.ice-cream');
+
+selectElement.addEventListener('change', (event) => {
+  const result = document.querySelector('.result');
+  result.textContent = `You like ${event.target.value}`;
+}); */}
+
+/************************************************ */
