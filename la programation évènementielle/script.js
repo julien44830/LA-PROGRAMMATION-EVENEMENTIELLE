@@ -4,6 +4,11 @@
 //si choix 2 selectionné alors formulaire 1 vérouillé
 
 //constente de selection
+const form = document.querySelectorAll('form');
+
+const h1 = document.querySelector('h1')
+//const  = document.querySelectorAll('')
+
 const user1 = document.getElementById('user1').value;
 const user2 = document.getElementById('user2');
 
@@ -17,25 +22,32 @@ console.log(userNumber);
 
   /*********************************/
 //function selectUser(){
-//  if('userNumber'.option[0]){
-//    .Style = ...
+//  if('userNumber'.option[1]){
+//    section[1].classList.add("section2_1");
+  //  console.log(section.classList);
 //  }else{
- //   .style2...
- // }
-//}
+ //  .style2...
+//  }
+// }
+
+function selectUser(){
+  form[1].classList.add("section2_1");
+  h1.classlist.add("section2_1");
+  console.log(form[1].classList)
+}
 
 function displayPseudo1(){
   const pseudo1 = document.getElementById('pseudo1');
   const displayPseudo1 = pseudo1.value;    
   document.getElementById("displayPseudo").innerText = displayPseudo1;
-  console.log("utilisateur 1 pseudo : " + displayPseudo1);     
+  console.log("utilisateur 1  pseudo : " + displayPseudo1);     
 }
 
 function displayPseudo2(){
   const pseudo2 = document.getElementById('pseudo2');
   const displayPseudo2 = pseudo2.value;
   document.getElementById("displayPseudo").innerText = displayPseudo2;
-  console.log("utilisateur 2 pseudo : " + displayPseudo2);
+  console.log("utilisateur 2  pseudo : " + displayPseudo2);
 }
 
 function displayMessage1(){
@@ -49,11 +61,12 @@ function displayMessage2(){
   const message2 = document.getElementById('message2');
   const displayMessage2 = message2.value;
   document.getElementById("displayMessage").innerText = displayMessage2;
-  console.log("utilisateur2 message : " + displayMessage2 );
+  console.log("utilisateur 2 message : " + displayMessage2 );
 }
 
 //appel au dom
-soumettre1.addEventListener('click', displayMessage1(),displayMessage2() , displayPseudo1(), displayPseudo2());
+soumettre2.addEventListener('click', displayMessage1(),displayMessage2() , displayPseudo1(), displayPseudo2());
 
+
+userNumber.addEventListener('select', selectUser());
 console.log('JavaScript bien chargé');
-

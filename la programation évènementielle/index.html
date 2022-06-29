@@ -19,13 +19,13 @@
   <main>    
     <div class="select">
       <label>vous êtes quelle utilisateur ?</label>
-      <select name="user" id="userNumber">       
-        <option value="user1" id="user1" >utilisateur 1</option>
+      <select name="user" id="userNumber" >       
+        <option onclick="selectUser()" value="user1" id="user1" >utilisateur 1</option>
         <option value="user2" id="user2" >utilisateur 2</option>
       </select>      
     </div>
     <div class="section">
-      <section class="section1">
+      <section id="section1" class="section1">
         <form>
         <h2>utilisateur 1</h2>
           <fieldset>
@@ -39,7 +39,7 @@
           <button id="soumettre1" onclick="displayMessage1(); displayPseudo1();" type="button">soumettre</button>
         </form>
       </section>
-      <section class="section2">
+      <section id="section2""" class="section2">
         <form>
         <h2>utilisateur 2</h2>
           <fieldset>
