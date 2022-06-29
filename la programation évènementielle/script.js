@@ -67,6 +67,6 @@ function displayMessage2(){
 //appel au dom
 soumettre2.addEventListener('click', displayMessage1(),displayMessage2() , displayPseudo1(), displayPseudo2());
 
-
+// ajout de la fonction sur le select
 userNumber.addEventListener('select', selectUser());
 console.log('JavaScript bien chargé');
