@@ -6,7 +6,7 @@
 //constente de selection
 const form = document.querySelectorAll('form');
 
-const h1 = document.getElementsByName('h1')
+const h1 = document.getElementById('h1');
 //const  = document.querySelectorAll('')
 
 const user1 = document.getElementById('user1').value;
@@ -29,11 +29,12 @@ console.log(userNumber);
  //  .style2...
 //  }
 // }
-
+console.log(h1);
 function selectUser(){
   form[1].classList.add("section2_1");
-  h1.classlist.add("section2_1");
-  console.log(form[1].classList)
+  h1.className += section2_1;
+  console.log(form[1].classList);
+  console.log(h1.classList)
 }
 
 function displayPseudo1(){

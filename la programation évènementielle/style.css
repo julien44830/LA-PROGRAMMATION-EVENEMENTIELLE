@@ -35,6 +35,8 @@ h1{
 .section2_1{
   background-color: rgba(0, 0, 0, 0.5);
   cursor: not-allowed;
+  position: relative;
+  z-index: -100;
 }
 
 section{
