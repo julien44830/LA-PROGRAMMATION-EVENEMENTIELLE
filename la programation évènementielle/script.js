@@ -4,7 +4,7 @@
 //si choix 2 selectionné alors formulaire 1 vérouillé
 
 //constente de selection
-const form = document.querySelectorAll('form');
+const button = document.querySelectorAll('button');
 
 const h1 = document.getElementById('h1');
 //const  = document.querySelectorAll('')
@@ -31,7 +31,7 @@ console.log(userNumber);
 // }
 console.log(h1);
 function selectUser(){
-  form[1].classList.add("section2_1");
+  button[1].classList.add("section2_1");
   h1.className += 'section2_1';
   console.log(form[1].classList);
   console.log(h1.classList)
@@ -93,5 +93,5 @@ selectElement.addEventListener('change', (event) => {
   const result = document.querySelector('.result');
   result.textContent = `You like ${event.target.value}`;
 }); */}
-
+//result.value = l
 /************************************************ */
