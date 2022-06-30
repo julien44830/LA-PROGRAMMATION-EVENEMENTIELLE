@@ -30,13 +30,13 @@ console.log(userNumber);
 //  }
 // }
 console.log(h1);
-function selectUser(){
-  button[1].classList.add("section2_1");
-  h1.className += 'section2_1';
-  console.log(form[1].classList);
-  console.log(h1.classList)
-  console.log(h1);
-}
+// function selectUser(){
+//   button[1].classList.add("section2_1");
+//   h1.className += 'section2_1';
+//   console.log(form[1].classList);
+//   console.log(h1.classList)
+//   console.log(h1);
+// }
 
 function displayPseudo1(){
   const pseudo1 = document.getElementById('pseudo1');
@@ -70,11 +70,11 @@ function displayMessage2(){
 soumettre2.addEventListener('click', displayMessage1(),displayMessage2() , displayPseudo1(), displayPseudo2());
 
 // ajout de la fonction sur le select
-userNumber.addEventListener('select', selectUser());
+// userNumber.addEventListener('select', selectUser());
 console.log('JavaScript bien chargé');
 
 
-/********************************************** */
+/***********************************************/
 {/* <label>Choose an ice cream flavor:
   <select class="ice-cream" name="ice-cream">
     <option value="">Select One …</option>
@@ -93,5 +93,11 @@ selectElement.addEventListener('change', (event) => {
   const result = document.querySelector('.result');
   result.textContent = `You like ${event.target.value}`;
 }); */}
-//result.value = l
-/************************************************ */
+
+const selectElement = document.getElementById('userNumber');
+
+selectElement.addEventListener('change', (event) => {
+  const result = document.getElementByIdById('soumettre1');
+  result.classList.add('section2_1');
+})
+/*************************************************/
