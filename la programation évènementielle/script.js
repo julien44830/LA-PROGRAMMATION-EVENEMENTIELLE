@@ -32,9 +32,10 @@ console.log(userNumber);
 console.log(h1);
 function selectUser(){
   form[1].classList.add("section2_1");
-  h1.className += section2_1;
+  h1.className += 'section2_1';
   console.log(form[1].classList);
   console.log(h1.classList)
+  console.log(h1);
 }
 
 function displayPseudo1(){
