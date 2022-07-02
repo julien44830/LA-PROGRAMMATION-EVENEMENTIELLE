@@ -1,42 +1,18 @@
-
-//si aucun choix selectionné alors formulaire 1 & 2 vérouillé
-//si choix 1 selectionné alors formulaire 2 verouillé
-//si choix 2 selectionné alors formulaire 1 vérouillé
-
 //constente de selection
 const button = document.querySelectorAll('button');
 
 const h1 = document.getElementById('h1');
-//const  = document.querySelectorAll('')
 
 const user1 = document.getElementById('user1').value;
 const user2 = document.getElementById('user2');
 
 const user = document.getElementById('userNumber').options.length;
 const userNumber = document.getElementById('userNumber');
+
 console.log(document.getElementById('userNumber').options[1])
 console.log(userNumber.length);
 console.log(userNumber);
-
-
-
-  /*********************************/
-//function selectUser(){
-//  if('userNumber'.option[1]){
-//    section[1].classList.add("section2_1");
-  //  console.log(section.classList);
-//  }else{
- //  .style2...
-//  }
-// }
 console.log(h1);
-// function selectUser(){
-//   button[1].classList.add("section2_1");
-//   h1.className += 'section2_1';
-//   console.log(form[1].classList);
-//   console.log(h1.classList)
-//   console.log(h1);
-// }
 
 function displayPseudo1(){
   const pseudo1 = document.getElementById('pseudo1');
@@ -69,10 +45,7 @@ function displayMessage2(){
 //appel au dom
 soumettre2.addEventListener('click', displayMessage1(),displayMessage2() , displayPseudo1(), displayPseudo2());
 
-// ajout de la fonction sur le select
-// userNumber.addEventListener('select', selectUser());
 console.log('JavaScript bien chargé');
-
 
 /***********************************************/
 {/* <label>Choose an ice cream flavor:
