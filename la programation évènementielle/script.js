@@ -52,18 +52,18 @@ console.log('JavaScript bien chargé');
 var selectElem = document.getElementById('userNumber');
 var pElem = document.getElementById('p');
 
-var index = selectElem.selectedIndex;
+var index = selectElem.selectedIndex ;
 // Quand une nouvelle <option> est selectionnée
 selectElem.addEventListener('change', function() {
   // Rapporter cette donnée au <p>
-  pElem.innerHTML = 'utilisateur ' + index++ + ' selectionné';
-})
+  pElem.innerHTML = 'utilisateur ' + selectElem.value + ' selectionné';
+}) //ajoute toujours +1 à l'index quoi qu'il arrive
 
 console.log(index);
 
 console.log(selectElem);
 
-if (index > 1){
+if (selectElem.value === 1){
   
 
 }else{
