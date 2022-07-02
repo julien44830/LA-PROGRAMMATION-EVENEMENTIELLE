@@ -96,8 +96,22 @@ selectElement.addEventListener('change', (event) => {
 
 const selectElement = document.getElementById('userNumber');
 
-selectElement.addEventListener('change', (event) => {
+selectElement.addEventListener('change', function select() {
+  const selectElement = document.getElementById('userNumber');
+
+  var index = selectElement.selectedIndex;
+  
+  console.log(Index)
   const result = document.getElementByIdById('soumettre1');
   result.classList.add('section2_1');
 })
 /*************************************************/
+// var selectElem = document.getElementById('select');
+// var pElem = document.getElementById('p');
+
+// // Quand une nouvelle <option> est selectionnée
+// selectElem.addEventListener('change', function() {
+//   var index = selectElem.selectedIndex;
+//   // Rapporter cette donnée au <p>
+//   pElem.innerHTML = 'selectedIndex: ' + index;
+// })
