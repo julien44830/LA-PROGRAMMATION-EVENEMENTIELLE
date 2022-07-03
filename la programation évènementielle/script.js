@@ -69,9 +69,9 @@ function myFunction() {
 
   if (selectElem.value == 2){
     element.classList.add("noSelect");
-    element2.classList.remove("noSelect")
+    element2.classList.remove("noSelect");
   }else{
-    element.classList.remove("noSelect")
+    element.classList.remove("noSelect");
     element2.classList.add("noSelect");
   }
 }
