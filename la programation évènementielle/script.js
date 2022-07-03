@@ -57,15 +57,20 @@ var index = selectElem.selectedIndex ;
 selectElem.addEventListener('change', function() {
   // Rapporter cette donnée au <p>
   pElem.innerHTML = 'utilisateur ' + selectElem.value + ' selectionné';
-}) //ajoute toujours +1 à l'index quoi qu'il arrive
+}) 
 
-console.log(index);
+console.log("selectElem index = " + index);
 
-console.log(selectElem);
+console.log("selectElem value = " + selectElem.value);
 
-if (selectElem.value === 1){
-  
+function myFunction() {
+  var element2 = document.getElementById("section2");
+  var element = document.getElementById("section1");
 
-}else{
-
+  if (selectElem.value === 2){
+    element2.classList.add("noSelect");
+  }else{
+    element2.classList.remove("noSelect")
+    element.classList.add("noSelect");
+  }
 }

@@ -107,3 +107,10 @@ input{
   display:inline-block;
   vertical-align: middle;
 }
+
+.noSelect{
+  color: yellow;
+  z-index: -100;
+  margin-top: 2000px;
+  cursor: not-allowed;
+}
