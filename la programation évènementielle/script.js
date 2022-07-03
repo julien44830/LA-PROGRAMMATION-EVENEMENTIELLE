@@ -67,10 +67,11 @@ function myFunction() {
   var element2 = document.getElementById("section2");
   var element = document.getElementById("section1");
 
-  if (selectElem.value === 2){
-    element2.classList.add("noSelect");
-  }else{
-    element2.classList.remove("noSelect")
+  if (selectElem.value == 2){
     element.classList.add("noSelect");
+    element2.classList.remove("noSelect")
+  }else{
+    element.classList.remove("noSelect")
+    element2.classList.add("noSelect");
   }
 }
