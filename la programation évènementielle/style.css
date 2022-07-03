@@ -111,6 +111,6 @@ input{
 .noSelect{
   color: yellow;
   z-index: -100;
-  margin-top: 2000px;
+  margin-top: 20px;
   cursor: not-allowed;
 }
