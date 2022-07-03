@@ -1,55 +1,22 @@
-
-//si aucun choix selectionné alors formulaire 1 & 2 vérouillé
-//si choix 1 selectionné alors formulaire 2 verouillé
-//si choix 2 selectionné alors formulaire 1 vérouillé
-
 //constente de selection
 const button = document.querySelectorAll('button');
-
-const h1 = document.getElementById('h1');
-//const  = document.querySelectorAll('')
 
 const user1 = document.getElementById('user1').value;
 const user2 = document.getElementById('user2');
 
 const user = document.getElementById('userNumber').options.length;
 const userNumber = document.getElementById('userNumber');
+
 console.log(document.getElementById('userNumber').options[1])
 console.log(userNumber.length);
 console.log(userNumber);
-
-
-
-  /*********************************/
-//function selectUser(){
-//  if('userNumber'.option[1]){
-//    section[1].classList.add("section2_1");
-  //  console.log(section.classList);
-//  }else{
- //  .style2...
-//  }
-// }
 console.log(h1);
-// function selectUser(){
-//   button[1].classList.add("section2_1");
-//   h1.className += 'section2_1';
-//   console.log(form[1].classList);
-//   console.log(h1.classList)
-//   console.log(h1);
-// }
 
 function displayPseudo1(){
   const pseudo1 = document.getElementById('pseudo1');
   const displayPseudo1 = pseudo1.value;    
   document.getElementById("displayPseudo").innerText = displayPseudo1;
-  console.log("utilisateur 1  pseudo : " + displayPseudo1);     
-}
-
-function displayPseudo2(){
-  const pseudo2 = document.getElementById('pseudo2');
-  const displayPseudo2 = pseudo2.value;
-  document.getElementById("displayPseudo").innerText = displayPseudo2;
-  console.log("utilisateur 2  pseudo : " + displayPseudo2);
+  console.log("utilisateur 1  pseudo : " + displayPseudo1);   
 }
 
 function displayMessage1(){
@@ -59,59 +26,51 @@ function displayMessage1(){
   console.log("utilisateur 1 message : " + displayMessage1 );
 }
 
+function displayPseudo2(){
+  const pseudo2 = document.getElementById('pseudo2');
+  const displayPseudo2 = pseudo2.value;
+  document.getElementById("displayPseudo2").innerText = displayPseudo2;
+  console.log("utilisateur 2  pseudo : " + displayPseudo2);
+}
+
 function displayMessage2(){
   const message2 = document.getElementById('message2');
   const displayMessage2 = message2.value;
-  document.getElementById("displayMessage").innerText = displayMessage2;
+  document.getElementById("displayMessage2").innerText = displayMessage2;
   console.log("utilisateur 2 message : " + displayMessage2 );
 }
 
 //appel au dom
 soumettre2.addEventListener('click', displayMessage1(),displayMessage2() , displayPseudo1(), displayPseudo2());
 
-// ajout de la fonction sur le select
-// userNumber.addEventListener('select', selectUser());
 console.log('JavaScript bien chargé');
 
-
-/***********************************************/
-{/* <label>Choose an ice cream flavor:
-  <select class="ice-cream" name="ice-cream">
-    <option value="">Select One …</option>
-    <option value="chocolate">Chocolate</option>
-    <option value="sardine">Sardine</option>
-    <option value="vanilla">Vanilla</option>
-  </select>
-</label>
-
-<div class="result"></div>
+/*             partie du select           */
+/******************************************/
 
 
-const selectElement = document.querySelector('.ice-cream');
+var selectElem = document.getElementById('userNumber');
+var pElem = document.getElementById('p');
 
-selectElement.addEventListener('change', (event) => {
-  const result = document.querySelector('.result');
-  result.textContent = `You like ${event.target.value}`;
-}); */}
+var index = selectElem.selectedIndex ;
+// Quand une nouvelle <option> est selectionnée
+selectElem.addEventListener('change', function() {
+  // Rapporter cette donnée au <p>
+  pElem.innerHTML = 'utilisateur ' + selectElem.value + ' selectionné';
+}) 
 
-const selectElement = document.getElementById('userNumber');
+console.log("selectElem index = " + index);
 
-selectElement.addEventListener('change', function select() {
-  const selectElement = document.getElementById('userNumber');
+console.log("selectElem value = " + selectElem.value);
 
-  var index = selectElement.selectedIndex;
-  
-  console.log(Index)
-  const result = document.getElementByIdById('soumettre1');
-  result.classList.add('section2_1');
-})
-/*************************************************/
-// var selectElem = document.getElementById('select');
-// var pElem = document.getElementById('p');
+function myFunction() {
+  var element2 = document.getElementById("section2");
+  var element = document.getElementById("section1");
 
-// // Quand une nouvelle <option> est selectionnée
-// selectElem.addEventListener('change', function() {
-//   var index = selectElem.selectedIndex;
-//   // Rapporter cette donnée au <p>
-//   pElem.innerHTML = 'selectedIndex: ' + index;
-// })
+  if (selectElem.value === 2){
+    element2.classList.add("noSelect");
+  }else{
+    element2.classList.remove("noSelect")
+    element.classList.add("noSelect");
+  }
+}

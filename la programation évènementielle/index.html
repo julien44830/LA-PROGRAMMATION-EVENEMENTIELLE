@@ -20,9 +20,9 @@
 
     <div class="select">
       <label>vous êtes quelle utilisateur ?</label>
-      <select name="user" id="userNumber" onclick="select()" >       
-        <option onclick="selectUser()" value="user1" id="user1" >utilisateur 1</option>
-        <option value="user2" id="user2" >utilisateur 2</option>
+      <select name="user" id="userNumber" onclick="myFunction()" >       
+        <option value="1" id="user1" >utilisateur 1</option>
+        <option value="2" id="user2" >utilisateur 2</option>
       </select>      
     </div>
 
@@ -60,7 +60,12 @@
         </form>
       </section>
     </div>    
-
+    
+    <div class="message">
+      <div class="span">
+        <span class="span2" id="p"></span>
+      </div>
+    </div>
     
     <div class="message">
       <div class="span">
@@ -68,7 +73,16 @@
         <span  class="span2" id="displayMessage"></span>
       </div>      
     </div>
+
+    <div class="message">
+      <div class="span">
+        <span class="span1" id="displayPseudo2">pseudo</span>       
+        <span  class="span2" id="displayMessage2"></span>
+      </div>      
+    </div>
+
   </main>
+
 
   <script src="script.js"></script>
 </body>
