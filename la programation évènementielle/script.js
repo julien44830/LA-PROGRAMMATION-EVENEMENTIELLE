@@ -75,3 +75,4 @@ function myFunction() {
     element2.classList.add("noSelect");
   }
 }
+// futur ajout : liste de message
