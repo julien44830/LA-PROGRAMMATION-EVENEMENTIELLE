@@ -2,11 +2,6 @@
 
 const userNumber = document.getElementById('userNumber');
 
-console.log(document.getElementById('userNumber').options[1])
-console.log(userNumber.length);
-console.log(userNumber);
-console.log(h1);
-
 function displayPseudo1(){
   const pseudo1 = document.getElementById('pseudo1');
   const displayPseudo1 = pseudo1.value;    
@@ -42,13 +37,11 @@ console.log('JavaScript bien chargé');
 
 /*             partie du select           */
 /******************************************/
-
-
 var selectElem = document.getElementById('userNumber');
 var pElem = document.getElementById('p');
 
-var index = selectElem.selectedIndex ;
 // Quand une nouvelle <option> est selectionnée
+var index = selectElem.selectedIndex ;
 
 //bloquer les buttons
 const button2 = document.getElementById('soumettre2');
@@ -89,7 +82,6 @@ selectElem.addEventListener('change', function() {
     button1.classList.remove("buttonNoSelect");
     form2.classList.remove("form");
 
-
   }else{
     // activation / desactivation des button
     button1.disabled = true;
@@ -106,21 +98,14 @@ selectElem.addEventListener('change', function() {
     button1.classList.add("buttonNoSelect");
     form2.classList.add("form");
 
-
     //suppression des class
     button1.classList .remove("buttonSelect");
     button2.classList .remove("buttonNoSelect");   
     form1.classList.remove("form");
-
-
-
   }
 }) 
 
 console.log("selectElem index = " + index);
-
 console.log("selectElem value = " + selectElem.value);
 
-function myFunction() {
-}
 // futur ajout : liste de message
