@@ -50,13 +50,23 @@ fieldset{
   width:70%;
   margin-left: auto;
   margin-right: auto;
-  
+}
+
+legend{
+  vertical-align: middle;
 }
 
 
 .select{
   margin-top: 40px;
   text-align: center;
+}
+
+.form:hover{
+  text-shadow: 0px 1px 10px white;
+  background-color: #6ecff0eb;
+  box-shadow: 1px 2px 30px black;
+  transition: all 0.2s;
 }
 
 h2{
@@ -73,44 +83,46 @@ button{
 }
 
 form{
-  background-color: rgba(0, 0, 0, 0.09) ;
-  box-shadow: 0px 0px 10px black;
+  background-color: rgba(0, 0, 0, 0.5) ;
+  box-shadow: 0px 0px 5px black;
   border-radius: 5px;
   padding: 10px;
   min-width: 245px;
-  
+  transition: all 0.5s;
+}
+
+.form{
+  background-color: #65bfddeb;
+  box-shadow: 0px 0px 10px white;
+
 }
 
 input{
   widht: 100%;
 }
 
-.message{
-  margin: 20px;
-  padding: 20px;
-  background-color: lightgrey;
-  height: 40px;
-}
-
-
-.span{
-  width: 100%;
-  height: 40px;
-  border: 1px solid black;
-}
-
-.span1{
+#displayPseudo, #displayPseudo2{
   text-transform: uppercase;
-  border-right: 0px solid black;
   padding: 10px;
-  background-color: grey;
   display:inline-block;
   vertical-align: middle;
+  text-shadow: 0px 0px 20px white;
+  color: white;
+  text-decoration: underline;
+  height: 1em;
 }
 
-.noSelect{
-  color: yellow;
-  z-index: -100;
-  margin-top: 20px;
-  cursor: not-allowed;
+.buttonSelect{
+  transition: all 0.2s;
+  box-shadow: 0px 0px 10px lightgreen;
+  background-color: green;
+  color: white;
+}
+
+.buttonNoSelect{
+  transition: all 0.2s;
+  box-shadow: 0px 0px 10px black;
+  background-color: tomato;
+  color: black;
+
 }

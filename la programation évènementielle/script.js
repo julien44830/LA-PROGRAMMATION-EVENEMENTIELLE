@@ -54,18 +54,54 @@ var pElem = document.getElementById('p');
 
 var index = selectElem.selectedIndex ;
 // Quand une nouvelle <option> est selectionnée
+
+//bloquer les buttons
+const button2 = document.getElementById('soumettre2');
+button2.disabled = true;
+
 selectElem.addEventListener('change', function() {
-  // Rapporter cette donnée au <p>
-  pElem.innerHTML = 'utilisateur ' + selectElem.value + ' selectionné';
-  var element2 = document.getElementById("section2");
-  var element = document.getElementById("section1");
+  const element = document.getElementById("section1");
+  const element2 = document.getElementById("section2");
+  const button1 = document.getElementById('soumettre1');
+  const form1 = document.getElementById('form1');
+  const form2 = document.getElementById('form2');
+
   
-  if (selectElem.value == 2){
-    element.classList.add("noSelect");
-    element2.classList.remove("noSelect");
+  pElem.innerHTML = 'utilisateur ' + selectElem.value + ' selectionné';
+  if (selectElem.value == 1){
+    // activation / desactivation des button
+    button2.disabled = true;
+    button1.disabled = false;
+
+    // ajout des class
+    button1.classList.add("buttonSelect");
+    button2.classList.add("buttonNoSelect");
+    form1.classList.add("form");
+
+    //suppression des class
+    button2.classList.remove("buttonSelect");
+    button1.classList.remove("buttonNoSelect");
+    form2.classList.remove("form");
+
+
   }else{
-    element.classList.remove("noSelect");
-    element2.classList.add("noSelect");
+    // activation / desactivation des button
+    button1.disabled = true;
+    button2.disabled = false;
+
+    // ajout des class
+    button2.classList.add("buttonSelect");
+    button1.classList.add("buttonNoSelect");
+    form2.classList.add("form");
+
+
+    //suppression des class
+    button1.classList .remove("buttonSelect");
+    button2.classList .remove("buttonNoSelect");   
+    form1.classList.remove("form");
+
+
+
   }
 }) 
 
