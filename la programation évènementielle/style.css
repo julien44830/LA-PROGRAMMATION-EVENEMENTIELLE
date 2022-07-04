@@ -66,7 +66,7 @@ legend{
   text-shadow: 0px 1px 10px white;
   background-color: #6ecff0eb;
   box-shadow: 1px 2px 30px black;
-  transition: all 0.2s;
+  transition: all 0.1s;
 }
 
 h2{
@@ -88,12 +88,14 @@ form{
   border-radius: 5px;
   padding: 10px;
   min-width: 245px;
-  transition: all 0.5s;
+  transition:1s all 0.5s;
+  color:rgba(0, 0, 0, 0.2);
 }
 
 .form{
   background-color: #65bfddeb;
   box-shadow: 0px 0px 10px white;
+  color: black;
 
 }
 
@@ -113,9 +115,9 @@ input{
 }
 
 .buttonSelect{
-  transition: all 0.2s;
+  transition:3s all 0.5s;
   box-shadow: 0px 0px 10px lightgreen;
-  background-color: green;
+  background-color: rgb(23, 184, 23);
   color: white;
 }
 

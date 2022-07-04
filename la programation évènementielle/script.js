@@ -1,10 +1,5 @@
 //constente de selection
-const button = document.querySelectorAll('button');
 
-const user1 = document.getElementById('user1').value;
-const user2 = document.getElementById('user2');
-
-const user = document.getElementById('userNumber').options.length;
 const userNumber = document.getElementById('userNumber');
 
 console.log(document.getElementById('userNumber').options[1])
@@ -63,16 +58,27 @@ selectElem.addEventListener('change', function() {
   const element = document.getElementById("section1");
   const element2 = document.getElementById("section2");
   const button1 = document.getElementById('soumettre1');
+  
   const form1 = document.getElementById('form1');
   const form2 = document.getElementById('form2');
-
   
+  const pseudo1 = document.getElementById('pseudo1');
+  const pseudo2 = document.getElementById('pseudo2');
+  
+  const message1 = document.getElementById('message1');
+  const message2 = document.getElementById('message2');
+
   pElem.innerHTML = 'utilisateur ' + selectElem.value + ' selectionné';
   if (selectElem.value == 1){
     // activation / desactivation des button
     button2.disabled = true;
     button1.disabled = false;
 
+    pseudo1.disabled = false;
+    pseudo2.disabled = true;
+
+    message1.disabled = false;
+    message2.disabled = true;
     // ajout des class
     button1.classList.add("buttonSelect");
     button2.classList.add("buttonNoSelect");
@@ -88,6 +94,12 @@ selectElem.addEventListener('change', function() {
     // activation / desactivation des button
     button1.disabled = true;
     button2.disabled = false;
+
+    pseudo1.disabled = true;
+    pseudo2.disabled = false;
+
+    message1.disabled = true;
+    message2.disabled = false;
 
     // ajout des class
     button2.classList.add("buttonSelect");
