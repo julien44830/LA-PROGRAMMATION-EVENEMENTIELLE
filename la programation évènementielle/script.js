@@ -57,16 +57,9 @@ var index = selectElem.selectedIndex ;
 selectElem.addEventListener('change', function() {
   // Rapporter cette donnée au <p>
   pElem.innerHTML = 'utilisateur ' + selectElem.value + ' selectionné';
-}) 
-
-console.log("selectElem index = " + index);
-
-console.log("selectElem value = " + selectElem.value);
-
-function myFunction() {
   var element2 = document.getElementById("section2");
   var element = document.getElementById("section1");
-
+  
   if (selectElem.value == 2){
     element.classList.add("noSelect");
     element2.classList.remove("noSelect");
@@ -74,5 +67,12 @@ function myFunction() {
     element.classList.remove("noSelect");
     element2.classList.add("noSelect");
   }
+}) 
+
+console.log("selectElem index = " + index);
+
+console.log("selectElem value = " + selectElem.value);
+
+function myFunction() {
 }
 // futur ajout : liste de message
