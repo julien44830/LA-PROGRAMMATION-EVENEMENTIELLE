@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Charis+SIL:ital,wght@0,400;0,700;1,400;1,700&family=Inconsolata:wght@900&display=swap" rel="stylesheet">
+  <link rel="icon" href="logo_JS.png">
 </head>
 
 <body>
@@ -32,50 +33,57 @@
       </div>
     </div>
 
-    <div class="section">
-      <section id="section1" class="section1">
-        <form class="form" id="form1">
-        <h2>utilisateur 1</h2>
-          <fieldset>
-            <legend>pseudo</legend> 
-            <input id="pseudo1" type="text" placeholder="pseudo" required>
-          </fieldset>
-          <fieldset>
-            <legend>message</legend>    
-            <textarea id="message1" class="messageInput" rows="5" placeholder="ici votre message"></textarea>
-          </fieldset>
-          <button class="buttonSelect" id="soumettre1" onclick="displayMessage1(); displayPseudo1();" type="button">soumettre</button>
-        </form>
-      </section>
-
-      <section id="section2""" class="section2 noSelect">
-        <form id="form2">
-        <h2>utilisateur 2</h2>
-          <fieldset>
-            <legend>pseudo</legend> 
-            <input class=".section2_1{
-              " type="text" id="pseudo2" placeholder="pseudo" disabled>
-          </fieldset>
-          <fieldset>
-            <legend>message</legend>    
-            <textarea id="message2" class="messageInput" rows="5" cols="25" placeholder="ici votre message" disabled></textarea>
-          </fieldset>
-          <button class="buttonNoSelect" id="soumettre2"  type="button" onclick="displayMessage2(); displayPseudo2();">soumettre</button>
-        </form>
-      </section>
-    </div> 
-
-    <fieldset class="message">
-      <legend class="legendMessage">message de l'utilisateur 1 :</legend>
-        <span id="displayPseudo">pseudo</span>       
-        <span id="displayMessage"></span>    
-    </fieldset>
-
-    <fieldset class="message">
-      <legend class="legendMessage">message de l'utilisateur 2 :</legend> 
-        <span id="displayPseudo2">pseudo</span>       
-        <span id="displayMessage2"></span>
-    </fieldset>
+    <div class="container1">
+      <div class="container2">
+        <div class="section">
+          <section id="section1" class="section1">
+            <form class="form" id="form1">
+            <h2>utilisateur 1</h2>
+              <fieldset>
+                <legend>pseudo</legend> 
+                <input id="pseudo1" type="text" placeholder="pseudo" required>
+              </fieldset>
+              <fieldset>
+                <legend>message</legend>    
+                <textarea id="message1" class="messageInput" rows="5" placeholder="ici votre message"></textarea>
+              </fieldset>
+              <button class="buttonSelect" id="soumettre1" onclick="displayMessage1(); displayPseudo1();" type="button">soumettre</button>
+            </form>
+          </section>
+    
+          <section id="section2""" class="section2 noSelect">
+            <form id="form2">
+            <h2>utilisateur 2</h2>
+              <fieldset>
+                <legend>pseudo</legend> 
+                <input class=".section2_1{
+                  " type="text" id="pseudo2" placeholder="pseudo" disabled>
+              </fieldset>
+              <fieldset>
+                <legend>message</legend>    
+                <textarea id="message2" class="messageInput" rows="5" cols="25" placeholder="ici votre message" disabled></textarea>
+              </fieldset>
+              <button class="buttonNoSelect" id="soumettre2"  type="button" onclick="displayMessage2(); displayPseudo2();">soumettre</button>
+            </form>
+          </section>
+        </div> 
+    
+        <fieldset class="message">
+          <legend class="legendMessage">message de l'utilisateur 1 :</legend>
+            <span id="displayPseudo">pseudo</span>       
+            <span id="displayMessage"></span>    
+        </fieldset>
+    
+        <fieldset class="message">
+          <legend class="legendMessage">message de l'utilisateur 2 :</legend> 
+            <span id="displayPseudo2">pseudo</span>       
+            <span id="displayMessage2"></span>
+        </fieldset>
+      </div>
+      <div class="img">
+        <img src="logo_JS.png" alt="logoJavaScript">
+      </div>
+    </div>
 
   </main>
 
