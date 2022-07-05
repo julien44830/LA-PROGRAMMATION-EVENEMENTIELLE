@@ -63,7 +63,7 @@ selectElem.addEventListener('change', function() {
 
   pElem.innerHTML = 'utilisateur ' + selectElem.value + ' selectionné';
   if (selectElem.value == 1){
-    // activation / desactivation des button
+    // activation / desactivation des button et champ formulaire
     button2.disabled = true;
     button1.disabled = false;
 
