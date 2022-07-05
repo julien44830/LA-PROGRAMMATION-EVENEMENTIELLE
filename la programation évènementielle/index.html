@@ -15,7 +15,7 @@
   <header>
     <h1 id="h1" class="">La programmation événementielle</h1>
   </header>
-  
+
   <main>    
 
     <div class="select">
@@ -26,6 +26,11 @@
       </select>      
     </div>
 
+    <div class="selectOption">
+      <div>
+        <span id="p">utilisateur 1 selectionné</span>
+      </div>
+    </div>
 
     <div class="section">
       <section id="section1" class="section1">
@@ -43,12 +48,6 @@
         </form>
       </section>
 
-      <div>
-        <div>
-          <span id="p">utilisateur 1 selectionné</span>
-        </div>
-      </div>
-
       <section id="section2""" class="section2 noSelect">
         <form id="form2">
         <h2>utilisateur 2</h2>
@@ -64,24 +63,21 @@
           <button class="buttonNoSelect" id="soumettre2"  type="button" onclick="displayMessage2(); displayPseudo2();">soumettre</button>
         </form>
       </section>
-    </div>    
-    
-    
-    
-    <fieldset>
-      <legend>message de l'utilisateur 1 :</legend>
+    </div> 
+
+    <fieldset class="message">
+      <legend class="legendMessage">message de l'utilisateur 1 :</legend>
         <span id="displayPseudo">pseudo</span>       
         <span id="displayMessage"></span>    
     </fieldset>
 
-    <fieldset >
-      <legend>message de l'utilisateur 2 :</legend> 
+    <fieldset class="message">
+      <legend class="legendMessage">message de l'utilisateur 2 :</legend> 
         <span id="displayPseudo2">pseudo</span>       
         <span id="displayMessage2"></span>
     </fieldset>
 
   </main>
-
 
   <script src="script.js"></script>
 </body>
