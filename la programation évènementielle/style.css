@@ -39,7 +39,6 @@ h1{
 
 .section2_1{
   background-color: rgba(0, 0, 0, 0.5);
-  cursor: not-allowed;
   position: relative;
   z-index: -100;
 }
@@ -97,7 +96,6 @@ form{
   min-width: 245px;
   transition:1s all 0.2s;
   color:rgba(0, 0, 0, 0.2);
-  cursor: not-allowed;
 }
 
 .form{
@@ -163,6 +161,10 @@ img{
   max-width: 300px;
   animation: spin 10s linear infinite;
   background-color: black;
+}
+
+.cusorOf{
+  cursor: not-allowed;
 }
 
 @keyframes spin{

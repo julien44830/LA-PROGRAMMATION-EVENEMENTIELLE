@@ -72,15 +72,18 @@ selectElem.addEventListener('change', function() {
 
     message1.disabled = false;
     message2.disabled = true;
+    
     // ajout des class
     button1.classList.add("buttonSelect");
     button2.classList.add("buttonNoSelect");
     form1.classList.add("form");
+    pseudo2.classList.add("cusorOf")
 
     //suppression des class
     button2.classList.remove("buttonSelect");
     button1.classList.remove("buttonNoSelect");
     form2.classList.remove("form");
+    pseudo1.classList.add("cusorOf")
 
   }else{
     // activation / desactivation des button
@@ -97,11 +100,15 @@ selectElem.addEventListener('change', function() {
     button2.classList.add("buttonSelect");
     button1.classList.add("buttonNoSelect");
     form2.classList.add("form");
+    pseudo2.classList.add("cusorOf")
+
 
     //suppression des class
     button1.classList .remove("buttonSelect");
     button2.classList .remove("buttonNoSelect");   
     form1.classList.remove("form");
+    pseudo1.classList.add("cusorOf")
+
   }
 }) 
 
